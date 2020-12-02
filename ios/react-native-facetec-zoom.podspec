@@ -7,8 +7,10 @@ Pod::Spec.new do |s|
   s.summary       = package['description']
   s.requires_arc  = true
   s.license       = package["license"]
-  s.homepage      = package["homepage"]
-  s.source        = { :git => 'https://github.com/tradle/react-native-facetec-zoom.git' }
+  s.homepage      = "https://github.com/patilgirish/react-native-facetec-zoom.git#mv/sdk9.x"
+  s.authors       = package["author"]
+  s.source        = { :git => 'https://github.com/patilgirish/react-native-facetec-zoom.git', :branch => 'mv/sdk9.x' }  
+  s.source_files = "*.{h,m,swift}"
   s.platform      = :ios, '7.0'
   s.dependency      'React'
 
